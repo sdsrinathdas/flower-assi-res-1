@@ -1,4 +1,202 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+/* common css start */
+
+.font-40{
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+}
+
+.font-30{
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+}
+
+.font-20{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(90, 99, 104);
+}
+
+.btn{
+    width: 150px;
+    height: 50px;
+    padding: 10px 20px;
+    background: #bc9ba8;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* header style start */
+
+
+.header-head{
+    background: #edc5d5;
+}
+
+header{ 
+    padding: 37px 46px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header .header-content{
+    width: 30%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header-content .header-title{
+    margin-top: 78px;
+}
+
+.header-content .header-description{   
+    margin: 25px 0;
+}
+
+.header .header-img{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .header-img img{
+    width: 60%;
+    height: 100%;
+    margin-left: 300px
+}
+
+.header-button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* header style end */
+
+/* main style start */
+
+.main{
+    padding: 37px 46px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flower-container .flower-content{
+    width: 40%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 65px;
+    text-align: center;
+}
+
+.flower-container .flower-content .flower-title{
+    margin-bottom: 20px;
+}
+
+.flower-img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.flower-img-container{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.flower-cart .flower-heading{
+    margin-bottom: 20px;
+    text-align: center;
+    color: blue;
+}
+
+.flower-img-container img{
+    width: 90%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.pink-flower{
+    background: #edc5d5;
+    border-radius: 150px;
+}
+
+/* main style end */
+
+
+@media screen and (max-width: 576px) {
+    header{
+        flex-direction: column;
+    }
+
+    .header .header-content{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .header .header-img{
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .header .header-img img{
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .header-button{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 916px) {
+    header{
+        flex-direction: column;
+    }
+
+    .header .header-content{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .header .header-img{
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .header .header-img img{
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .header-button{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+
